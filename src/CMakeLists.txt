@@ -56,6 +56,8 @@ endif()
 # Set the project name
 #PROJECT(${PROJECT_NAME})
 
+
+
 #-------------------------------------------------------------------------------
 #	Qt Settings
 #-------------------------------------------------------------------------------
@@ -167,6 +169,8 @@ set_property(TARGET WalabotAPI PROPERTY IMPORTED_LOCATION /usr/lib/walabot/libWa
 #find_package(WalabotAPI REQUIRED)
 #set_target_properties(WalabotAPI PROPERTIES IMPORTED_LOCATION "/usr/lib/walabot")
 list(REMOVE_DUPLICATES LIBRARIES)
+
+add_subdirectory(test)
 #-------------------------------------------------------------------------------
 #	GENERATE EXECUTABLE
 #-------------------------------------------------------------------------------

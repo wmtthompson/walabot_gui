@@ -186,17 +186,17 @@ void ExpObj::wlbt_set_profile()
 	// ------------------------
 	// Initialize configuration
 	// ------------------------
-	double zArenaMin = 2;
-	double zArenaMax = 3;
-	double zArenaRes = 0.2;
+	double zArenaMin = 3;
+	double zArenaMax = 8;
+	double zArenaRes = 0.5;
 
 	double xArenaMin = -3;
 	double xArenaMax = 4;
-	double xArenaRes = 0.1;
+	double xArenaRes = 0.5;
 
-	double yArenaMin = -5;
+	double yArenaMin = -6;
 	double yArenaMax = 4;
-	double yArenaRes = 0.1;
+	double yArenaRes = 0.5;
 	res = Walabot_SetArenaX(xArenaMin, xArenaMax, xArenaRes);
 	CHECK_WALABOT_RESULT(res, "Walabot_SetArenaX");
 
